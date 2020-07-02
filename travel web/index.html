@@ -1,0 +1,556 @@
+<html>
+    <head>
+    
+        <title> TravelWorld </title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+         <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<!--        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"-->
+<!--
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <style>
+        body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.loader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #000;
+}
+#loader1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    pointer-events: none;
+    animation: fadeout .5s linear forwards;
+    animation-delay: 3.5s;
+}
+@keyframes fadeout{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.count{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 18vw;
+    color: #fff;
+    font-weight: 800; 
+    mix-blend-mode: difference;
+    width: 550px;
+    text-align: right;
+}</style>
+       <style>
+           
+           *{
+               margin: 0; padding: 0;
+               font-family: 'Josefin Sans', sans-serif;
+
+           }
+           
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  </style>
+       <style>
+/*
+        .btn{
+
+display: inline-block; text-decoration: none; line-height: 33.75px;
+    padding: 1px 22.5px;
+    text-align: center;
+            border: 2px solid #e7247a; 
+border:none;
+    width: auto;
+    min-width: 165px;  background-color: #e7247a; color: white; border color: hotpink;
+            box-sizing: border-box;
+            
+           }
+*/
+           
+           .btn{
+               
+  background-color:white; /* Grewhiten */
+  border: none;
+  color: #e7247a;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  
+
+}
+               
+           
+           
+           .btn:hover{
+border: 2px solid #e7247a; 
+    background-color:#e7247a;
+  color: white;
+    
+}
+        </style>
+    </head>
+<body>
+    <section id="loader1">
+        
+    <div class="loader"></div>
+    <div class="count"></div></section>
+
+<!--
+
+    <h1 style="text-align: center; color: green; text-transform: capitalize;font-weight: bold;">  HELLO WORLD</h1>
+-->
+<!--
+    <hr>
+    <h1 class="text-center text-success text-capitalize font-weight-bold">HELLO WORLD</h1>
+
+-->
+<header>
+    
+    <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!--    <title>Hello, world!</title>-->
+  </head>
+  <body>
+<!--    <h1>Hello, world!</h1>-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand "  href="#" style=" font-weight: 700; font-family: cursive;" >TravelWorld.com</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li> <img src="images/travel-icon-png-25.jpg" class="logo"></li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Destinations <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Holiday Homes</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Restaurants</a>
+          <a class="dropdown-item" href="#">Places</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Travel trends</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Things to do</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+    
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/la1.jpg" alt="Los Angeles" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Los Angeles</h3>
+        <p>We had such a great time in LA!</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="images/ch4.jpg" alt="Chicago" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Chicago</h3>
+        <p>Thank you, Chicago!</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="images/ny2.jpg" alt="New York" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>New York</h3>
+        <p>We love the Big Apple!</p>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+    </header>
+    
+    <hr>
+    <br>
+        
+<!--
+    about us
+    
+-->
+    <section>
+    <div class="container-fluid">
+            
+<!--        <h1 class="text-center text-capitalize pt-5">about us</h1>-->
+<!--        <hr class="w-25 mx-auto pt-5"> -->
+        
+    <div class="row" mt-5>
+        <div class="col-lg-6 col-md-6 col-12">
+        <img style="padding-left: 20px;"src="images/ch3.jpg "class="img-fluid mt-5 pt-5">
+        </div>
+        <div class="col-lg-6 col-md-6 col-12">
+           <strong> <h1 style="font-weight: 500; font-family:cursive; "> PRESTIGIOUS PENNINSULA </h1></strong>
+            <hr>
+            <p>After being met by your driver, enjoy the ride through the streets of Manhattan to the iconic 5th Avenue where The Peninsula New York awaits. Your luxury abode for the next few nights, this red carpeted palace lies in the heart of the city’s most prestigious shopping, entertainment, and cultural district. Home to a stunning glass-enclosed pool, a world-class spa and the revered Salon de Ning rooftop bar and terrace, the temptation to stay enclosed in your Peninsula paradise will be very real. But, you’re in NYC, and the bright lights are calling. Hop into your chauffeured Peninsula MINI Clubman (a complimentary service for those of you that opt for a suite) and get to know this wonderful city. If you’re an NYC first-timer, we’ll ensure you tick off the must-sees like the nearby Central Park, the Rockefeller Centre in Manhattan and Midtown’s Times Square. If you’ve seen it all before, we’ll skip these sights and head straight to your appointment with your personal shopper, who will help you fill the trunk of your car with the latest trends. Back at the hotel, The Peninsula Academy will have lots of bespoke excursions to offer you too. From a day searching for the perfect bridal gown with bridal stylist Julie Sabatino to sea-plane excursions to Long Island for a private lesson in sea oystering, fishing and clamming; The Peninsula Academy will ensure your time in NYC is completely unique.</p>
+        </div>
+        </div>
+        </div>
+            
+            
+         <div style="border: 1px solid gray; padding: 10px;margin-left: 30px; margin-right: auto; background-color: lightgray;">
+            <h2 style="font-size: 20px;">MAKE THIS ITINERARY YOURS</h2>
+             <p>Like what you see? Contact us today to find out more about our exclusive itineraries. But remember: each and every KetchupWorld trip is tailored exactly to who you are and what you want to do so tell us about yourself and we’ll create something that’s entirely you.</p>
+             
+             <button class="btn"> START PLANNING HERE </button>
+            </div>
+            
+             <br>
+            <br>
+            
+            
+            
+             <div class="row" mt-5>
+        <div class="col-lg-6 col-md-6 col-12">
+<!--<img style="margin-left: 10px"src="images/ch2.webp" class="img-fluid mt-5 pt-5 ">-->
+            
+            <img style="padding-left: 20px ;" src="images/ch2.webp" class="img-fluid mt-5 pt-5">
+        </div>
+        <div class="col-lg-6 col-md-6 col-12">
+            <h1  style="font-weight: 500; font-family:cursive; ">WINDY CITY WANDERING</h1>
+            <hr>
+            <p>Next stop, Chicago – a cultural US hub that’s home to improv comedy, jazz, blues and soul music. The Peninsula Chicago is where you’ll rest up for the next few nights, the discerning first choice in a city renowned for its imaginative art and design. Situated a stone’s throw from the city’s celebrated Magnificent Mile, if shopping is what you’re after, you couldn’t be better placed. What’s more, you’ll be staying in a luxurious and spacious room, with a fleet of chauffeured vehicles at your beck and call throughout your stay. Having undergone a recent renovation, you’ll find that the 331 suites and guest-rooms at the hotel are adorned in rich Macassar wood and feature hand-crafted pieces by renowned artist David Qian. So freshen up in your restyled abode before heading out for a guided tour through several of Chicago’s distinct neighbourhoods and explore the famed architectural treasures of downtown, including some of the world’s first skyscrapers.
+            Take a light breakfast on your next morning and maybe squeeze in a swim in the Peninsula pool – you’ll want to work up an appetite for the day ahead. Today will see you exploring and enjoying the culinary greats that originated from this cultural melting pot, from deep-dish pizzas to Chicago-style hot-dogs and pastrami sandwiches – overindulgence at its finest.
+            It’s time to immerse yourself in that iconic Chicago skyline, and thanks to The Peninsula Chicago’s Keys to the City programme, you’ll be enjoying a variety of exclusive experiences. Think fast-pass access to The Art Institute of Chicago, culinary experiences and sunset views from 360 Chicago. And to finish up your time in the Windy City, head to The Willis Tower for a trip up to their stunning Skydeck on the 103rd floor. Be sure to step out onto the The Ledge, consisting of four all-glass boxes that you can step out onto for the ultimate viewing experience. Not for the faint-hearted, you’ll feel as if you’re floating over the sidewalk hundreds of metres below.</p>
+                 </div>
+            </div>
+
+                 <div class="row" mt-5>
+        <div class="col-lg-6 col-md-6 col-12">
+
+            
+            <img style="padding-left: 20px ;" src="images/la2.jpg"class="img-fluid mt-5 pt-5">
+        </div>
+        <div class="col-lg-6 col-md-6 col-12">
+            <h1  style="font-weight: 500; font-family:cursive; margin-top:4px;">LA LIVING</h1>
+            <hr>
+            <p>The home of Hollywood calls, so head to Los Angeles to discover a trend-setting global metropolis with a fascinating history and rich cultural heritage. Stay with the stars in The Peninsula Beverly Hills, one of Southern California’s best addresses. Recuperate from your journey by relaxing in one of the hotel’s poolside cabanas as you sip a signature cocktail. Equipped with flat-screen TV’s, i-pod docks and telephones, you’ll be amazed at how quickly time flies when you’re in the lap of luxury. Before you know it, the sun will be setting and it’ll be time to dine on the finest cuisine at the hotel’s Roof Garden.
+            Having woken feeling refreshed, meet your private chauffeur and allow yourself to be transported to the hottest spots in LA. Shop till you drop on Rodeo Drive and take a look around the Getty Center before working up an appetite with a hike in Franklin Canyon. Back at the hotel, treat yourself to a spa treatment and allow the staff to take care of your every wish before moving on to dine at the newly renovated Belvedere restaurant. With a Mediterranean-inspired menu (think locally sourced ingredients and the freshest seafood) and beautiful interiors, your evening will be both delicious and relaxed.
+            Your final few days will see you living the active LA lifestyle, with a horseback riding tour through the rolling Hollywood hills and a surf lesson from surfing world veteran John Philbin. Be sure to soak up your surroundings as you master those LA waves – this will be the magical memory that marks the end of your bi-coastal US tour.</p>
+                 </div>
+            </div>
+
+    </section>
+    
+<!--    SERVICE PART-->
+    <section>
+     
+    <div class="container">
+        
+        <h1 class="text-center text-capitalize pt-5">services</h1>
+        <hr class="w-25 mx-auto pt-5"> 
+        <hr>
+<!--
+        <div class="bed" >
+            <img src="images/bed.png">
+        
+        </div>
+-->
+<!--
+        <hr>
+   <i class="fa fa-wrench" style="font-size:24px"></i>
+-->
+
+        </div>
+        
+        <div class="row text-center ">
+                <div class="col-lg-4 col-md-4 col=12">
+                    <div class="card" style="width:350px; margin-left: auto;">
+                        <img class="card-img-top" src="images/hotel%20ny.jpg" alt="Card image">
+                      <div class="card-body">
+                          <strong>    <h4 style="font-size:100%;  font-weight: bolder; font: 93.75%/1.5 PT Sans,Helvetica Neue,Helvetica,Arial,sans-serif;  font: inherit; line-height: 1.2; letter-spacing: 1.5px;" class="card-title">THE PENINSULA NEWYORK</h4></strong>
+<!--                          <p class="card-text">Some example text.</p>-->
+                            <a href="#" class="btn btn-dark">VIEW MORE</a>
+                      </div>
+                    </div>
+                 </div>
+        
+                <div class="col-lg-4 col-md-4 col=12">
+                    <div class="card" style="width:350px; margin: auto;">
+                        <img class="card-img-top" src="images/chhotel2.jpg" alt="Card image">
+                      <div class="card-body">
+                          <strong>   <h4 style="font-size:100%;  font-weight: bolder; font: 93.75%/1.5 PT Sans,Helvetica Neue,Helvetica,Arial,sans-serif;  font: inherit; line-height: 1.2; letter-spacing: 1.5px;" class="card-title">THE PENINSULA CHICAGO</h4></strong>
+<!--                          <p class="card-text">Some example text.</p>-->
+                            <a href="#" class="btn btn-dark">VIEW MORE</a>
+                      </div>
+                    </div>
+                 </div>
+         
+                <div class="col-lg-4 col-md-4 col=12">
+                    <div class="card" style="width:350px; margin-right: auto;">
+                        <img class="card-img-top" src="images/lahotel.jpg" alt="Card image">
+                      <div class="card-body">
+                          <strong> <h4 style="font-size:100%;  font-weight: bolder; font: 93.75%/1.5 PT Sans,Helvetica Neue,Helvetica,Arial,sans-serif;  font: inherit; line-height: 1.2; letter-spacing: 1.5px; " class="card-title">THE PENINSULA BEVERLY HILLS</h4></strong>
+<!--                          <p class="card-text">Some example text.</p>-->
+                            <a href="#" class="btn btn-dark">VIEW MORE</a>
+                      </div>
+                    </div>
+                 </div>
+        
+        
+        </div>
+        
+    </section>
+    
+    
+    <section>
+    <article class=" container mt-5 text-center font-weight-bold  ">
+        <div style="padding: 20px;background-color:#e60073;color: aliceblue; border: 1px solid black; " >
+               <p><span>Call us on +44 207 426 9888 or +1 646 558 3644 or tell us what you're looking  for<button type="button" class="btn btn-link">here</button></span>.
+                    <br>
+            WE'LL MAKE IT HAPPEN.</p><br>
+            
+<!--            <button style="padding:2px ">Contact Now</button>-->
+        <button type="button" class="btn btn-outline-success">Contact Now</button>
+            </div>
+        </article>
+    </section>
+    
+    
+    <section>
+     
+    <div class="container">
+        
+        <h1 class="text-center text-capitalize  pt-5">gallery</h1>
+        <hr class="w-25 mx-auto pt-5"> 
+    
+        
+        <div class="row">
+        <div class="col-lg-4 col-md-2 col-12 mb-4">
+            <img src="images/gallery2.jpg" class="img-fluid";>
+            </div>
+        
+    
+     
+        <div class="col-lg-4 col-md-2 col-12 mb-4">
+            <img src="images/gall3.jpg" class="img-fluid";>
+            </div>
+       
+     
+        <div class="col-lg-4 col-md-2 col-12 mb-4">
+            <img src="images/gall5.jpg" class="img-fluid";>
+            </div>
+       
+
+        <div class="col-lg-4 col-md-2 col-12 mb-4">
+            <img src="images/gallery1.jpg" class="img-fluid";>
+            </div>
+      
+
+        <div class="col-lg-4 col-md-2 col-12 mb-4">
+            <img src="images/galll4.jpg" class="img-fluid";>
+            </div>
+        
+     
+        <div class="col-lg-4 col-md-2 col-12 mb-4">
+            <img src="images/gall6.jpg" class="img-fluid";>
+            </div>
+        
+        </div>
+        </div>
+         </section>
+<!--        gallery end-->
+        
+<!--        register form-->
+         <section>
+    <article class=" container mt-5  font-weight-bold  ">
+        <div style="padding: 20px;background-color:lightgray; color:black; border: 1px solid black; " class="text-center" >
+            <h3 style="font-family: cursive; font-weight: 800; ">WANT TO EXPLORE</h3>
+                    <br>
+          <p style="font-family:inherit;"> We’re not like the travel agencies you’ll walk past on the high street, or the faceless booking engines you might stumble upon online. We’re award winning experts in the art of travel. We’re here to guide you, to inspire you, to tailor an experience to your precise needs, because every traveller is searching for that perfect experience. So let us help you find yours….</p><br>
+            
+<!--            <button style="padding:2px ">Contact Now</button>-->
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">START PLANNING HERE</button>
+            </div>
+         <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          
+          <form>
+  <div class="form-group">
+    <label for="formGroupExampleInput" style="font-size: 20px; margin: 20px; color: deeppink; font-weight: bold;" >WHEN DO YOU WANT TO TRAVEL?</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Select your preference">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2" style="font-size: 20px; margin: 20px; color: deeppink; font-weight: bold;">WHERE DO YOU WANT TO TRAVEL?</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Select your Destination">
+  </div>
+</form>
+          
+          
+      </div>
+    </div>
+  </div>
+        </article>
+    </section>
+        
+    <section>
+     
+    
+        
+<!--   <div><h3 style="font-size: 20px; margin: 20px; font-weight: bold; color: royalblue;">LOGIN TO MY BUCKET LIST ></h3></div>-->
+      
+        <!-- Modal Header -->
+<!--
+        <div class="modal-header w-50 mx-auto">
+            
+            <br>
+            <br>
+            
+            <span> <h4 class="modal-title">Sign up</h4></span>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+-->
+        <div class="container mb-5">
+        
+        <h1 class="text-center text-capitalize  pt-5">Contact us</h1>
+        <hr class="w-25 mx-auto pt-5"> 
+        
+        <!-- Modal body -->
+        <div class="modal-body w-50 mx-auto">
+                      <form action="/action_page.php">
+              <div class="form-group">
+                <label for="email">Your Name:</label>
+                <input type="text" class="form-control" placeholder="enter your name" id="email">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Email address:</label>
+                <input type="email" class="form-control" placeholder="enter your email" id="pwd">
+              </div>
+             <div class="form-group">
+                <label for="pwd">Mobile Number:</label>
+                <input type="number" class="form-control" placeholder="enter your number" id="pwd">
+              </div>
+              <div class="form-group form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox"> Remember me
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer ">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+    
+        </div>
+        </section>
+    
+    
+   <section id="footer">
+            <p class="text-center bg-dark text-white">
+Package holidays are sold by TravelWorld.com as an agent for Hays Tour Operating Ltd, ATOL 10531
+Please see our booking conditions for more information. © 2020 TravelWorld.com.
+Calls may be recorded for training and quality assurance purposes.</p>
+       <img src="images/copyright-30343_960_720.png" class="footer-img">
+       <p class="footer-text"> Copyright 2020</p>
+       </section>
+    
+
+         <div class="social-icons " >
+         <img src="images/fb.png">
+         <img src="images/instagram.png">
+         <img src="images/twitter.png">
+         <img src="images/linkedin.png"></div>
+    
+    
+
+
+</body>
+<script type="text/javascript">
+    $(document).ready(function(){
+        var count = 0;
+        var counter = setInterval(function(){
+            if(count < 101){
+                $('.count').text(count + '%');
+                 $('.loader').css('width', count + '%');
+                count++
+            }
+            else{
+                clearInterval(counter)
+            }
+        },30)
+    })
+    </script>
+
+
+
+
+
+</html>

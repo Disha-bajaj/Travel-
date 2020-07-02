@@ -1,0 +1,47 @@
+.social-icons{
+    width: 30px;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.social-icons img{
+    display: block;
+    width: 20px;
+    margin: 0 auto 20px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+::-webkit-scrollbar{
+    width: 12px;
+    background-color: white;
+}
+::-webkit-scrollbar-thumb{
+    background-color: midnightblue;
+    border-radius: 14px;
+}
+.logo{
+    max-height: 40px;
+    max-width: 100px;
+}
+#footer{
+    align-items: center;
+    
+}
+.footer-img{
+    align-items: center;
+    max-width: 50px;
+    max-height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 550px;
+   
+}
+.footer-text{
+     position: absolute;
+    left: 610px;
+   
+}
